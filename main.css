@@ -93,12 +93,18 @@ ul.topnav li.dropdownIcon{
 	 background-image: linear-gradient(#076DFF, #65a5ff);
 }
 
-.leftside-col{
+div.leftside-col{
 	margin-left: 30%;
 }
+
+div.rightside-col {
+	margin-left: 15%;
+}
+
+
 h1.large{
 	color: #fff;
-	font-size: 56px;
+	font-size: 30px;
 	margin: 0;
 	line-height: 70px;
 }
@@ -112,6 +118,7 @@ input[type="text"]{
 	width: 400px;
 	min-width: 100px;
 	padding: 5px;
+	border-radius: 7px;
 }
 /*####### Mobile responsiveness detect the size of screen (media query) and list the menus under humbuger icon####*/
 
@@ -143,5 +150,20 @@ input[type="text"]{
 		display: block;
 		text-align: left;
 	}
-	
+	.col-6{
+		width: 100%;
+		margin: 0;
+	}
+	div.leftside-col, div.rightside-col{
+		margin: 15px;
+	}
+	input[type="text"]{
+		width: 350px;
+	}
+	.videoContainer iframe {
+		position: relative;
+		width: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
 }
