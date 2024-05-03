@@ -13,10 +13,16 @@ label {
 	font-weight: 600;
 }
 
+article p{
+	font-size: 28px;
+	padding: 20px;
+}
+
 ul li {
 	font-size: 28px;
 	line-height: 1.2;
 }
+
 
 .container{
 	width: 100%;
@@ -118,6 +124,13 @@ div.box{
 	
 }
 
+div.powerHouseIcon img {
+	display: block;
+	margin: auto;
+	box-shadow: -2px /*Horizontal*/ -2px/*Vartical*/ 20px/*BLURR*/ 2px/*Spred*/ rgba(0/*shadow*/,0/*Background color*/,0/*Box color*/,.15/*opacity*/),
+		2px 2px 17px 2px rgba(0,0,0,1);
+}
+
 button{
 	font-size: 32px;
 	font-weight: 700px;
@@ -138,6 +151,7 @@ div.icon{
 	width: 100%;
 }
 
+
 div.leftside-col{
 	margin-left: 30%;
 }
@@ -145,6 +159,8 @@ div.leftside-col{
 div.rightside-col {
 	margin-left: 15%;
 }
+
+
 
 
 h1.large{
@@ -170,6 +186,27 @@ input[type="text"]{
 	padding: 5px;
 	border-radius: 7px;
 }
+
+footer.footsy{
+	background-color: #666;
+	padding-left: 10%;
+}
+
+footer.footsy h1{
+	color: #fff;
+}
+
+footer.footsy ul {
+	list-style: none;
+	text-align: left;
+	padding-left: 0;
+}
+
+footer.footsy ul li{
+	color: #fff;
+	font-size: 20px;
+}
+
 /*####### Mobile responsiveness detect the size of screen (media query) and list the menus under humbuger icon####*/
 
 @media screen and (max-width: 680px) {
@@ -200,15 +237,34 @@ input[type="text"]{
 		display: block;
 		text-align: left;
 	}
-	.col-6, .col-4 {
+	
+	article p{
+		display: block;
+		font-size: 25px;
+	}
+	
+	.col-6, .col-7, .col-5, .col-4 {
 		width: 100%;
 		margin: 0;
+	}
+	
+	div.mobileStack{
+		display: block;
+		width: 50%;
 	}
 	
 	div.box{
 		padding: 5px;
 		display: block;
 		
+	}
+	
+	div.powerHouseIcon img{
+		width: 100%;
+	}
+	
+	div.powerHouseIcon {
+		margin: 10px;
 	}
 	
 	div.leftside-col, div.rightside-col{
